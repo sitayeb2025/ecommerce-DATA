@@ -1,0 +1,26 @@
+# Environnement virtuel
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Fichiers volumineux (> 100MB)
+outputs/data/events_clean.csv
+outputs/data/visitor_features.csv
+outputs/data/events_clean.parquet
+
+# Donnees brutes (a telecharger separement)
+data/*.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
