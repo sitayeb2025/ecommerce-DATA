@@ -1,10 +1,3 @@
-"""
-Dashboard E-commerce - RetailRocket Analytics
-==============================================
-Application Streamlit professionnelle pour visualiser les KPIs e-commerce.
-
-Lancement: streamlit run dashboard/app.py
-"""
 
 import streamlit as st
 import pandas as pd
@@ -16,9 +9,8 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# =============================================================================
 # CONFIGURATION DE LA PAGE
-# =============================================================================
+
 
 st.set_page_config(
     page_title="RetailRocket Analytics",

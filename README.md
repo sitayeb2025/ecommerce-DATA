@@ -28,30 +28,16 @@ git checkout dev
 ```
 
 2. Si le dépôt est hébergé sur GitHub/GitLab vous pouvez aussi télécharger le ZIP via l'interface web.
-
+python scripts/data_pipeline.py
 ## Installer les dépendances
 
-Si un fichier `requirements.txt` existe :
 
-```bash
-python -m venv .venv
-# Windows (PowerShell)
-.\.venv\Scripts\Activate.ps1
-# Windows (cmd)
-.\.venv\Scripts\activate.bat
-# macOS / Linux
-source .venv/bin/activate
 
-pip install -r requirements.txt
-```
-
-S'il n'y a pas de `requirements.txt`, installez au moins :
 
 ```bash
 pip install streamlit pandas numpy plotly
 ```
 
-## Exemples d'utilisation
 
 - Lancer le pipeline de préparation des données :
 
@@ -76,7 +62,7 @@ jupyter lab  # ou jupyter notebook
 - Vérifier l'état : `git status`
 - Ajouter des fichiers : `git add <path>`
 - Commit : `git commit -m "Message de commit"`
-- Pousser : `git push origin dev` (ou `git push --set-upstream origin <branch>` si nécessaire)
+- Pousser : `git push origin dev` (ou `git push --set-upstream origin main` si nécessaire)
 
 ## Structure rapide
 

@@ -53,9 +53,9 @@ print(f'[OK] Lignes sans NaN critiques')
 
 print(f'\nResultat : {len(events_clean):,} lignes (supprime {before - len(events_clean):,})')
 
-# =============================================================================
+
 # 3. CONVERSION DES TYPES
-# =============================================================================
+
 print('\nCONVERSION DES TYPES')
 print('=' * 50)
 
@@ -77,9 +77,8 @@ print('[OK] event -> category')
 memory_after = events_clean.memory_usage(deep=True).sum() / 1024**2
 print(f'\nMemoire : {memory_before:.1f} MB -> {memory_after:.1f} MB (gain {(1-memory_after/memory_before)*100:.0f}%)')
 
-# =============================================================================
 # 4. FEATURE ENGINEERING
-# =============================================================================
+
 print('\nFEATURE ENGINEERING')
 print('=' * 50)
 
@@ -99,9 +98,9 @@ buyers = events_clean[events_clean['event'] == 'transaction']['visitorid'].uniqu
 events_clean['visitor_converted'] = events_clean['visitorid'].isin(buyers).astype('uint8')
 print(f'[OK] visitor_converted : {len(buyers):,} acheteurs identifies')
 
-# =============================================================================
+
 # 5. FEATURES VISITEURS
-# =============================================================================
+
 print('\nFEATURES VISITEURS')
 print('=' * 50)
 
@@ -141,9 +140,9 @@ visitor_features['segment'] = visitor_features.apply(segment_visitor, axis=1)
 print(f'[OK] {len(visitor_features):,} visiteurs profiles')
 print(f'   Segments : {visitor_features["segment"].value_counts().to_dict()}')
 
-# =============================================================================
+
 # 6. FEATURES PRODUITS
-# =============================================================================
+
 print('\nFEATURES PRODUITS')
 print('=' * 50)
 
@@ -171,9 +170,8 @@ product_features['cart_to_purchase'] = (product_features['n_transaction'] / prod
 
 print(f'[OK] {len(product_features):,} produits profiles')
 
-# =============================================================================
 # 7. EXPORT
-# =============================================================================
+
 print('\nEXPORT')
 print('=' * 50)
 
@@ -198,9 +196,8 @@ product_export['last_seen'] = product_export['last_seen'].astype(str)
 product_export.to_csv(f'{CLEAN_DATA_PATH}product_features.csv', index=False)
 print(f'[OK] {CLEAN_DATA_PATH}product_features.csv')
 
-# =============================================================================
 # RESUME
-# =============================================================================
+
 print('\n' + '=' * 60)
 print('PIPELINE DATA ENGINEERING TERMINE')
 print('=' * 60)
