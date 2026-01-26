@@ -13,7 +13,6 @@ __pycache__/
 outputs/data/events_clean.csv
 outputs/data/visitor_features.csv
 outputs/data/events_clean.parquet
-
 notebooks/ab_testing.ipynb
 
 # Donnees brutes (a telecharger separement)
