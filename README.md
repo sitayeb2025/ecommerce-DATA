@@ -76,6 +76,8 @@ DATA-ECOMMERCE-1/
 │
 ├── .gitignore               # Fichiers ignorés par Git
 │
+├── La decumentation PDF     # La decumentation de projet
+│
 ├── README.md                # Documentation du projet
 │
 └── Requirements.txt     #Dépendances Python du projet
