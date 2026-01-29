@@ -86,7 +86,7 @@ st.markdown("""
     
     /* Sidebar Styling */
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        background: linear-gradient(180deg, #ff0000 0%, #ff0000 100%);
     }
     section[data-testid="stSidebar"] .stMarkdown {
         color: #e2e8f0;
@@ -191,18 +191,18 @@ st.markdown("""
 def load_data():
     """Charge les donnees preparees."""
     try:
-        visitors = pd.read_csv('../outputs/data/visitor_features.csv')
-        products = pd.read_csv('../outputs/data/product_features.csv')
+        visitors = pd.read_csv('../data/clean/visitor_features.csv')
+        products = pd.read_csv('../data/clean/product_features.csv')
         
         try:
-            events = pd.read_csv('../outputs/data/events_clean.csv')
+            events = pd.read_csv('../data/clean/events_clean.csv')
             events['timestamp'] = pd.to_datetime(events['timestamp'])
             events['date'] = events['timestamp'].dt.date
         except:
             events = None
             
         try:
-            kpis = pd.read_csv('../outputs/data/kpi_business_summary.csv')
+            kpis = pd.read_csv('../data/clean/kpi_business_summary.csv')
         except:
             kpis = None
             
@@ -472,7 +472,7 @@ def main():
         visitors, products, events, kpis_df = load_data()
     
     if visitors is None:
-        st.error("Impossible de charger les donnees. Verifiez que les fichiers existent dans outputs/data/")
+        st.error("Impossible de charger les donnees. Verifiez que les fichiers existent dans data/clean/")
         st.stop()
     
     filters = render_sidebar(visitors, products)
