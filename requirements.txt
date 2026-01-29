@@ -1,0 +1,13 @@
+# Dashboard et interface
+streamlit==1.53.1
+
+# Manipulation et calculs de données
+pandas==2.3.3
+numpy==2.4.1
+
+# Statistiques et A/B testing
+scipy==1.17.0
+ 
+# Visualisations interactives 
+plotly ==6.5.2
+
