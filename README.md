@@ -87,4 +87,4 @@ DATA-ECOMMERCE-1/
 │
 ├── README.md                # Documentation du projet
 │
-└── Requirements.txt     #Dépendances Python du projet.
+└── Requirements.txt     #Dépendances Python du projet
