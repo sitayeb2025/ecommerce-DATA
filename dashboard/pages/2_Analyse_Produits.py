@@ -95,7 +95,7 @@ st.markdown("""
 @st.cache_data
 def load_products():
     """Charge les donnees produits."""
-    return pd.read_csv('../outputs/data/product_features.csv')
+    return pd.read_csv('../data/clean/product_features.csv')
 
 
 def create_performance_scatter(products):

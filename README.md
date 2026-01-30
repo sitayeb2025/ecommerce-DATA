@@ -25,7 +25,7 @@ Récupérer le projet
 ```bash
  git clone https://github.com/sitayeb2025/ecommerce-DATA.git
 
- cd data-ecommerce-1
+ cd ecommerce-DATA
 
 2️ **Créer un environnement virtuel(recommandé)**
 
@@ -43,6 +43,13 @@ Récupérer le projet
 
 4️ Préparer les données
 
+Télécharger le fichier zip depuis " https://www.kaggle.com/datasets/retailrocket/  ecommerce-dataset"
+ 
+ créer le dossier 'data' dans la racine de projet
+
+ prendre les fichiers extraites et les mettres dans 'data'
+
+ preparation des donnèes pour le dashboard
  python scripts/data_pipeline.py
 
 5️ Lancer le dashboard Streamlit
@@ -66,7 +73,7 @@ DATA-ECOMMERCE-1/
 │
 ├── data/                    # Données du projet
 │   ├── clean/               # Données nettoyées et préparées
-│   └── data/                # Données brutes (Kaggle)
+│   └──  /                   # Données brutes (Kaggle)
 │             
 │
 ├── notebooks/               # Notebooks d’analyse exploratoire (EDA)
@@ -76,7 +83,7 @@ DATA-ECOMMERCE-1/
 │
 ├── .gitignore               # Fichiers ignorés par Git
 │
-├── La decumentation PDF     # La decumentation de projet
+├── La decumentation PDF     # La decumentation de projetcd
 │
 ├── README.md                # Documentation du projet
 │

@@ -108,7 +108,7 @@ st.markdown("""
 def load_ab_results():
     """Charge les resultats du test A/B."""
     try:
-        return pd.read_csv('../outputs/data/ab_test_results.csv')
+        return pd.read_csv('../data/clean/ab_test_results.csv')
     except:
         return None
 

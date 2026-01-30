@@ -80,7 +80,7 @@ st.markdown("""
 def load_events():
     """Charge les evenements avec timestamps."""
     try:
-        events = pd.read_csv('../outputs/data/events_clean.csv')
+        events = pd.read_csv('../data/clean/events_clean.csv')
         # Timestamp en millisecondes Unix -> conversion avec unit='ms'
         events['timestamp'] = pd.to_datetime(events['timestamp'], unit='ms')
         events['date'] = events['timestamp'].dt.date

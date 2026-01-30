@@ -10,10 +10,12 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Fichiers volumineux (> 100MB)
-outputs/data/events_clean.csv
-outputs/data/visitor_features.csv
+# outputs/data/events_clean.csv
+# outputs/data/visitor_features.csv
 outputs/data/events_clean.parquet
+
 notebooks/ab_testing.ipynb
+
 
 # Donnees brutes (a telecharger separement)
 data/*.csv

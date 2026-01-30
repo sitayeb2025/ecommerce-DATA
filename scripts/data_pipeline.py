@@ -14,7 +14,7 @@ pd.set_option('display.max_columns', None)
 
 # Configuration
 RAW_DATA_PATH = 'data/'
-CLEAN_DATA_PATH = 'outputs/data/'
+CLEAN_DATA_PATH = 'data/clean/'
 os.makedirs(CLEAN_DATA_PATH, exist_ok=True)
 
 print('[OK] Configuration terminee')
