@@ -141,7 +141,7 @@ print(f'[OK] {len(visitor_features):,} visiteurs profiles')
 print(f'   Segments : {visitor_features["segment"].value_counts().to_dict()}')
 
 
-# 6. FEATURES PRODUITS
+# 6. FEATURES PRODUITS.
 
 print('\nFEATURES PRODUITS')
 print('=' * 50)
